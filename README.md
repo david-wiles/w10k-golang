@@ -22,3 +22,5 @@ docker run --cpus="0.5" --memory="1Gi" --env PING_INTERVAL=10s -p 8080:8080 w10k
 
 [k6](https://k6.io/docs/) is a good tool for load testing servers with virtual users. See 
 [w10k-k6-clients](https://github.com/david-wiles/w10k-k6-clients) for the test files.
+
+This implementation is based on the [gorilla/websocket chat example](https://github.com/gorilla/websocket/tree/76ecc29eff79f0cedf70c530605e486fc32131d1/examples/chat). 
