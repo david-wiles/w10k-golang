@@ -7,8 +7,12 @@ terraform {
   }
 }
 
-variable "do_token" {}
-variable "pvt_key" {}
+variable "do_token" {
+  sensitive = true
+}
+variable "pvt_key" {
+  sensitive = true
+}
 variable "domain" {}
 
 provider "digitalocean" {

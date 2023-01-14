@@ -21,8 +21,6 @@ resource "digitalocean_droplet" "w10k-go" {
   provisioner "remote-exec" {
     inline = [
       "sudo apt-get update",
-#      "scp "
-      "git clone https://github.com/david-wiles/w10k-go.git"
     ]
   }
 }
